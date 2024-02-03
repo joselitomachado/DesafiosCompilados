@@ -195,22 +195,64 @@
             //    Console.WriteLine($"Ocorreu um erro na sua aplicação: {ex.Message}");
             //}
 
-            Console.WriteLine("========================[ Desafio 5]========================\n");
+            //Console.WriteLine("========================[ Desafio 5]========================\n");
 
-            int numero, total;
+            //int numero, total;
+            //try
+            //{
+            //    Console.WriteLine("Digite um número da tabuada que deseja: ");
+            //    numero = int.Parse(Console.ReadLine());
+
+            //    Console.WriteLine($"A tabuada do {numero}: \n");
+            //    for (int i = 0; i <= 10; i++)
+            //    {
+            //        total = numero * i;
+            //        Console.WriteLine($"{numero} x {i} = {total}");
+            //    }
+
+            //    Console.WriteLine("\nTabuada finalizada com sucesso!");
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.Clear();
+            //    Console.WriteLine($"Ocorreu um erro na sua aplicação: {ex.Message}");
+            //}
+
+            Console.WriteLine("========================[ Desafio 6]========================\n");
+
+            string nomeAluno, nomeMateria;
+            decimal notaUnidade1, notaUnidade2, notaUnidade3, notaUnidade4, mediaGeral;
+
             try
             {
-                Console.WriteLine("Digite um número da tabuada que deseja: ");
-                numero = int.Parse(Console.ReadLine());
+                Console.WriteLine("Digite o nome do aluno: ");
+                nomeAluno = Console.ReadLine();
 
-                Console.WriteLine($"A tabuada do {numero}: \n");
-                for (int i = 0; i <= 10; i++)
+                Console.WriteLine("\nDigite o nome da matéria: ");
+                nomeMateria = Console.ReadLine();
+
+                Console.WriteLine($"\nDigite a nota da 1ª unidade: ");
+                notaUnidade1 = decimal.Parse(Console.ReadLine());
+
+                Console.WriteLine($"\nDigite a nota da 2ª unidade: ");
+                notaUnidade2 = decimal.Parse(Console.ReadLine());
+
+                Console.WriteLine($"\nDigite a nota da 3ª unidade: ");
+                notaUnidade3 = decimal.Parse(Console.ReadLine());
+
+                Console.WriteLine($"\nDigite a nota da 4ª unidade: ");
+                notaUnidade4 = decimal.Parse(Console.ReadLine());
+
+                mediaGeral = (notaUnidade1 + notaUnidade2 + notaUnidade3 + notaUnidade4) / 4;
+
+                if (mediaGeral >= 7.00m)
                 {
-                    total = numero * i;
-                    Console.WriteLine($"{numero} x {i} = {total}");
+                    Console.WriteLine($"Parabéns {nomeAluno}, você foi aprovado com a média: {mediaGeral} na matéria {nomeMateria}");
                 }
-
-                Console.WriteLine("\nTabuada finalizada com sucesso!");
+                else
+                {
+                    Console.WriteLine($"{nomeAluno} você foi reprovado com a média: {mediaGeral} na matéria {nomeMateria}");
+                }
             }
             catch (Exception ex)
             {
