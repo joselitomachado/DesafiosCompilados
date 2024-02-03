@@ -72,39 +72,79 @@
             //        Console.WriteLine($"Ocorreu um erro na sua aplicação: {ex.Message}");
             //    }
 
+            //Console.WriteLine("========================[ Desafio 2]========================\n");
 
-            Console.WriteLine("========================[ Desafio 2]========================\n");
+            //int idade;
 
-            int idade;
+            //try
+            //{
+            //    Console.WriteLine("Digite sua idade: ");
+            //    idade = int.Parse(Console.ReadLine());
+
+            //    if (idade >= 5 && idade <= 7)
+            //    {
+            //        Console.WriteLine("Sua categoria é Infantil A");
+            //    }
+            //    else if (idade >= 8 && idade <= 11)
+            //    {
+            //        Console.WriteLine("Sua categoria é Infantil B");
+            //    }
+            //    else if (idade >= 12 && idade <= 13)
+            //    {
+            //        Console.WriteLine("Sua categoria é Juvenil A");
+            //    }
+            //    else if (idade >= 14 && idade <= 17)
+            //    {
+            //        Console.WriteLine("Sua categoria é Juvenil B");
+            //    }
+            //    else if (idade >= 18)
+            //    {
+            //        Console.WriteLine("Sua categoria é Adulto");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Você não pode participar do campeonato, pois, não tem idade suficiente!");
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.Clear();
+            //    Console.WriteLine($"Ocorreu um erro na sua aplicação: {ex.Message}");
+            //}
+
+            Console.WriteLine("========================[ Desafio 3]========================\n");
+
+            string nome;
+            char sexo;
+            decimal peso, altura, resultado;
 
             try
             {
-                Console.WriteLine("Digite sua idade: ");
-                idade = int.Parse(Console.ReadLine());
+                Console.WriteLine("Digite seu nome: ");
+                nome = Console.ReadLine();
 
-                if (idade >= 5 && idade <= 7)
+                Console.WriteLine("\nDigite seu sexo: ");
+                sexo = char.Parse(Console.ReadLine());
+
+                Console.WriteLine("\nDigite seu peso: ");
+                peso = decimal.Parse(Console.ReadLine());
+
+                Console.WriteLine("\nDigite seu altura: ");
+                altura = decimal.Parse(Console.ReadLine());
+
+                if (sexo == 'M')
                 {
-                    Console.WriteLine("Sua categoria é Infantil A");
+                    resultado = (peso * altura) - 58.00m;
+                    Console.WriteLine($"\n{nome} seu peso ideal é {resultado}");
                 }
-                else if (idade >= 8 && idade <= 11)
+                else if (sexo == 'F')
                 {
-                    Console.WriteLine("Sua categoria é Infantil B");
-                }
-                else if (idade >= 12 && idade <= 13)
-                {
-                    Console.WriteLine("Sua categoria é Juvenil A");
-                }
-                else if (idade >= 14 && idade <= 17)
-                {
-                    Console.WriteLine("Sua categoria é Juvenil B");
-                }
-                else if (idade >= 18)
-                {
-                    Console.WriteLine("Sua categoria é Adulto");
+                    resultado = (peso * altura) - 44.70m;
+                    Console.WriteLine($"\n{nome} seu peso ideal é {resultado}");
                 }
                 else
                 {
-                    Console.WriteLine("Você não pode participar do campeonato, pois, não tem idade suficiente!");
+                    Console.WriteLine("Sexo inválido!");
                 }
             }
             catch (Exception ex)
