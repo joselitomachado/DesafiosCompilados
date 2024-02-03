@@ -16,7 +16,7 @@
 - Juvenil B = 14 a 17 anos
 - Adultos = Maiores de 18 anos
   
-### Desafio 3
+## Desafio 3
 **Crie uma aplicação console, onde, você receba o nome, sexo peso e altura de uma pessoa e retorne o peso ideal para ela.**
 
 *Sabendo-se que para obtermos o resultado precisamos do cálculo básico.*
@@ -24,7 +24,7 @@
 - Para Homens: (peso x altura) – 58
 - Para Mulheres: (peso x altura) – 44.7
 
-### Desafio 4
+## Desafio 4
 **Crie uma aplicação console, onde, você receba o valor em R$ (REAL) e dê opção para qual moeda ele quer converter.**
 
 *Segue os dados de moedas possíveis para conversão e seus valores fictícios:*
@@ -35,10 +35,10 @@
 - euro ( € ) = R$ 5,36
 - libra ( £ ) = R$ 6,26
   
-### Desafio 5
+## Desafio 5
 - Crie uma aplicação console, onde, você peça ao usuário para digitar qual tabuada ele quer visualizar e retorne toda a tabuada.
   
-### Desafio 6
+## Desafio 6
 **Crie uma aplicação console, onde, você peça ao usuário (coordenador de uma escola) digitar o nome do aluno, nome da matéria, notas da 1ª, 2ª, 3ª e 4ª unidade.**
 
 *Por fim exiba na aplicação se o aluno foi aprovado ou não.*
