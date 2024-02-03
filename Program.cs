@@ -112,39 +112,81 @@
             //    Console.WriteLine($"Ocorreu um erro na sua aplicação: {ex.Message}");
             //}
 
-            Console.WriteLine("========================[ Desafio 3]========================\n");
+            //Console.WriteLine("========================[ Desafio 3]========================\n");
 
-            string nome;
-            char sexo;
-            decimal peso, altura, resultado;
+            //string nome;
+            //char sexo;
+            //decimal peso, altura, resultado;
+
+            //try
+            //{
+            //    Console.WriteLine("Digite seu nome: ");
+            //    nome = Console.ReadLine();
+
+            //    Console.WriteLine("\nDigite seu sexo: ");
+            //    sexo = char.Parse(Console.ReadLine());
+
+            //    Console.WriteLine("\nDigite seu peso: ");
+            //    peso = decimal.Parse(Console.ReadLine());
+
+            //    Console.WriteLine("\nDigite seu altura: ");
+            //    altura = decimal.Parse(Console.ReadLine());
+
+            //    if (sexo == 'M')
+            //    {
+            //        resultado = (peso * altura) - 58.00m;
+            //        Console.WriteLine($"\n{nome} seu peso ideal é {resultado}");
+            //    }
+            //    else if (sexo == 'F')
+            //    {
+            //        resultado = (peso * altura) - 44.70m;
+            //        Console.WriteLine($"\n{nome} seu peso ideal é {resultado}");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Sexo inválido!");
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.Clear();
+            //    Console.WriteLine($"Ocorreu um erro na sua aplicação: {ex.Message}");
+            //}
+
+            Console.WriteLine("========================[ Desafio 4]========================\n");
+
+            int opcao;
+            decimal valorEmReais, resultado;
 
             try
             {
-                Console.WriteLine("Digite seu nome: ");
-                nome = Console.ReadLine();
+                Console.WriteLine("Digite o valor em R$ que você quer converter: ");
+                valorEmReais = decimal.Parse(Console.ReadLine());
 
-                Console.WriteLine("\nDigite seu sexo: ");
-                sexo = char.Parse(Console.ReadLine());
+                Console.WriteLine("\n1 - Dólar");
+                Console.WriteLine("2 - Euro");
+                Console.WriteLine("3 - Libra");
 
-                Console.WriteLine("\nDigite seu peso: ");
-                peso = decimal.Parse(Console.ReadLine());
+                Console.WriteLine("\nDigite a opção de moeda que você quer converter: ");
+                opcao = int.Parse(Console.ReadLine());
 
-                Console.WriteLine("\nDigite seu altura: ");
-                altura = decimal.Parse(Console.ReadLine());
-
-                if (sexo == 'M')
+                switch (opcao)
                 {
-                    resultado = (peso * altura) - 58.00m;
-                    Console.WriteLine($"\n{nome} seu peso ideal é {resultado}");
-                }
-                else if (sexo == 'F')
-                {
-                    resultado = (peso * altura) - 44.70m;
-                    Console.WriteLine($"\n{nome} seu peso ideal é {resultado}");
-                }
-                else
-                {
-                    Console.WriteLine("Sexo inválido!");
+                    case 1:
+                        resultado = valorEmReais / 4.93m;
+                        Console.WriteLine($"\nO valor da conversão é {resultado}");
+                        break;
+                    case 2:
+                        resultado = valorEmReais / 5.36m;
+                        Console.WriteLine($"\nO valor da conversão é {resultado}");
+                        break;
+                    case 3:
+                        resultado = valorEmReais / 6.26m;
+                        Console.WriteLine($"\nO valor da conversão é {resultado}");
+                        break;
+                    default:
+                        Console.WriteLine("Opção inválida! Tente novmanete");
+                        break;
                 }
             }
             catch (Exception ex)
