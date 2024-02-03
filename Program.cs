@@ -153,41 +153,64 @@
             //    Console.WriteLine($"Ocorreu um erro na sua aplicação: {ex.Message}");
             //}
 
-            Console.WriteLine("========================[ Desafio 4]========================\n");
+            //Console.WriteLine("========================[ Desafio 4]========================\n");
 
-            int opcao;
-            decimal valorEmReais, resultado;
+            //int opcao;
+            //decimal valorEmReais, resultado;
 
+            //try
+            //{
+            //    Console.WriteLine("Digite o valor em R$ que você quer converter: ");
+            //    valorEmReais = decimal.Parse(Console.ReadLine());
+
+            //    Console.WriteLine("\n1 - Dólar");
+            //    Console.WriteLine("2 - Euro");
+            //    Console.WriteLine("3 - Libra");
+
+            //    Console.WriteLine("\nDigite a opção de moeda que você quer converter: ");
+            //    opcao = int.Parse(Console.ReadLine());
+
+            //    switch (opcao)
+            //    {
+            //        case 1:
+            //            resultado = valorEmReais / 4.93m;
+            //            Console.WriteLine($"\nO valor da conversão é {resultado}");
+            //            break;
+            //        case 2:
+            //            resultado = valorEmReais / 5.36m;
+            //            Console.WriteLine($"\nO valor da conversão é {resultado}");
+            //            break;
+            //        case 3:
+            //            resultado = valorEmReais / 6.26m;
+            //            Console.WriteLine($"\nO valor da conversão é {resultado}");
+            //            break;
+            //        default:
+            //            Console.WriteLine("Opção inválida! Tente novmanete");
+            //            break;
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.Clear();
+            //    Console.WriteLine($"Ocorreu um erro na sua aplicação: {ex.Message}");
+            //}
+
+            Console.WriteLine("========================[ Desafio 5]========================\n");
+
+            int numero, total;
             try
             {
-                Console.WriteLine("Digite o valor em R$ que você quer converter: ");
-                valorEmReais = decimal.Parse(Console.ReadLine());
+                Console.WriteLine("Digite um número da tabuada que deseja: ");
+                numero = int.Parse(Console.ReadLine());
 
-                Console.WriteLine("\n1 - Dólar");
-                Console.WriteLine("2 - Euro");
-                Console.WriteLine("3 - Libra");
-
-                Console.WriteLine("\nDigite a opção de moeda que você quer converter: ");
-                opcao = int.Parse(Console.ReadLine());
-
-                switch (opcao)
+                Console.WriteLine($"A tabuada do {numero}: \n");
+                for (int i = 0; i <= 10; i++)
                 {
-                    case 1:
-                        resultado = valorEmReais / 4.93m;
-                        Console.WriteLine($"\nO valor da conversão é {resultado}");
-                        break;
-                    case 2:
-                        resultado = valorEmReais / 5.36m;
-                        Console.WriteLine($"\nO valor da conversão é {resultado}");
-                        break;
-                    case 3:
-                        resultado = valorEmReais / 6.26m;
-                        Console.WriteLine($"\nO valor da conversão é {resultado}");
-                        break;
-                    default:
-                        Console.WriteLine("Opção inválida! Tente novmanete");
-                        break;
+                    total = numero * i;
+                    Console.WriteLine($"{numero} x {i} = {total}");
                 }
+
+                Console.WriteLine("\nTabuada finalizada com sucesso!");
             }
             catch (Exception ex)
             {
