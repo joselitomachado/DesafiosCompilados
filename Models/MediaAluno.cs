@@ -31,7 +31,7 @@
 
                 mediaGeral = (notaUnidade1 + notaUnidade2 + notaUnidade3 + notaUnidade4) / 4;
 
-                if (mediaGeral >= 7.00m)
+                if (mediaGeral >= 6.00m)
                 {
                     Console.WriteLine($"Parabéns {nomeAluno}, você foi aprovado com a média: {mediaGeral} na matéria {nomeMateria}");
                 }
