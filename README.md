@@ -43,5 +43,5 @@
 
 *Por fim exiba na aplicação se o aluno foi aprovado ou não.*
 
-- Nota média igual ou acima de 7.0 = ***Aprovado(a)***
-- Nota média menor que 7.0 = ***Reprovado(a)***
+- Nota média igual ou acima de 6.0 = ***Aprovado(a)***
+- Nota média menor que 6.0 = ***Reprovado(a)***
