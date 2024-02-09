@@ -33,11 +33,11 @@
 
                 if (mediaGeral >= 6)
                 {
-                    Console.WriteLine($"Parabéns {nomeAluno}, você foi aprovado com a média ({mediaGeral}) na matéria de {nomeMateria}");
+                    Console.WriteLine($"Parabéns {nomeAluno}, você foi aprovado com a média ( {mediaGeral} ) na matéria de {nomeMateria}");
                 }
                 else
                 {
-                    Console.WriteLine($"{nomeAluno} você foi reprovado com a média ({mediaGeral}) na matéria de {nomeMateria}");
+                    Console.WriteLine($"{nomeAluno} você foi reprovado com a média ( {mediaGeral} ) na matéria de {nomeMateria}");
                 }
 
                 Menu.TelaMenu();
